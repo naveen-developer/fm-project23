@@ -139,4 +139,12 @@ h1 {
     .review:nth-child(3) {
         transform: translateX(4rem);
     }
+
+    article:nth-child(2) {
+        transform: translateY(1rem);
+    }
+
+    article:nth-child(3) {
+        transform: translateY(2rem);
+    }
 }
