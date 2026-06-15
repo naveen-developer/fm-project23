@@ -1,0 +1,141 @@
+:root {
+    --white: #ffffff;
+    --purple900: #512051;
+    --purple300: #927B91;
+    --purple100: #F7F2F7;
+    --pink400: #EE69A4;
+    --orange400: #EF9546;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    padding: 2rem;
+    max-width: 30rem;
+    width: 100%;
+}
+
+h1 {
+    color: var(--purple900);
+    font-size: 2.5rem;
+}
+
+.hero-text {
+    color: var(--purple300);
+    font-size: 1.188rem;
+    margin-block: 1rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.hero_reviews {
+    text-align: center;
+    padding: 1rem;
+}
+
+.review {
+    background-color: var(--purple100);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
+    flex-direction: column;
+    margin-block: 1rem;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.review-text {
+    color: var(--purple900);
+    font-weight: 700;
+    font-size: 1.063rem;
+}
+
+.userReviews {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.userReview {
+    background-color: var(--purple900);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.name,
+.userComment blockquote {
+    color: var(--white)
+}
+
+.userComment blockquote {
+    line-height: 1.4em;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.verify-status {
+    color: var(--pink400)
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        max-width: 70rem;
+    }
+
+    .hero_reviews {
+        display: flex;
+        gap: 10rem;
+    }
+
+    .hero {
+        max-width: 30%;
+        text-align: left;
+    }
+
+    .userReviews {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .review {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .review:nth-child(2) {
+        transform: translateX(2rem);
+    }
+
+    .review:nth-child(3) {
+        transform: translateX(4rem);
+    }
+}
